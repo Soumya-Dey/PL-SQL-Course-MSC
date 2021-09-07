@@ -1,10 +1,10 @@
 set serveroutput on
 
 declare
-  e_id NUMBER := &e_id;
-  e_name VARCHAR2(255);
-  e_dept VARCHAR2(255);
-  e_salary NUMBER;
+  e_id emp.emp_id%type := &e_id;
+  e_name emp.emp_name%type;
+  e_dept emp.emp_dept%type;
+  e_salary emp.emp_salary%type;
 
 begin
   select emp_name, emp_dept, emp_salary
