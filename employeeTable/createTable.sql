@@ -1,16 +1,18 @@
 create table emp(
     emp_id int,
-    emp_name varchar(30),
-    emp_dept varchar(30),
-    emp_salary int,
-    primary key(emp_id)
+    emp_name varchar(10),
+    emp_dept varchar(16),
+    emp_salary int
 );
 
-insert into emp values(1, 'Alexandro Dare', 'Engineering', 23000);
-insert into emp values(2, 'Birdie Brakus', 'Design', 54000);
-insert into emp values(3, 'Sigmund Hills', 'Hardware', 36000);
-insert into emp values(4, 'Cora Baumbach', 'Sales', 28000);
-insert into emp values(5, 'Kay Mann', 'Marketing', 43000);
+insert into emp values(1, 'emp 01', 'Engineering', 23000);
+insert into emp values(2, 'emp 02', 'HR', 54000);
+insert into emp values(3, 'emp 03', 'Hardware', 36000);
+insert into emp values(4, 'emp 04', 'Sales', 28000);
+insert into emp values(5, 'emp 05', 'Marketing', 43000);
+insert into emp values(5, 'emp 06', 'Sales', 37000);
+insert into emp values(6, 'emp 07', 'Marketing', 40000);
+insert into emp values(7, 'emp 08', 'Marketing', 20000);
 
 create table manager(
     manager_id int,
