@@ -1,10 +1,10 @@
 create or replace procedure 
-    oldestTeacher() is
-    tid teacher.t_id%type
-    tname teacher.t_name%type
-    tdept teacher.t_dept%type
-    tsal teacher.t_salary%type
-    tdob teacher.t_dob%type
+    oldestTeacher(num in number) is
+    tid teacher.t_id%type;
+    tname teacher.t_name%type;
+    tdept teacher.t_dept%type;
+    tsal teacher.t_salary%type;
+    tdob teacher.t_dob%type;
 
     cursor c is select * from teacher where t_dob = (select min(t_dob) from teacher);
     begin
